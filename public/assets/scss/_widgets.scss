@@ -1,0 +1,189 @@
+/* ==============
+  Widgets
+===================*/
+
+.widget-chart li {
+    width: 31.5%;
+    display: inline-block;
+    padding: 0;
+    i {
+        font-size: 22px;
+    }
+}
+
+.mini-stat {
+    .mini-stat-img{
+        width: 58px;
+        height: 58px;
+        line-height: 58px;
+        background: rgba($white, 0.15);
+        border-radius: 4px;
+        text-align: center;
+        img{
+            max-width: 32px;
+        }
+    }
+    .mini-stat-label{
+        position: absolute;
+        right: 0;
+        top: 18px;
+        padding: 2px 10px 2px 32px;
+        clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 24% 50%, 6% 0);
+    }
+}
+
+.wid-peity{
+    border-bottom: 1px solid $gray-200;
+}
+
+.ct-chart{
+    &.earning{
+        height: 284px;
+        .ct-grid{
+            stroke-width: 1px;
+        }
+    }
+    &.wid{
+        height: 220px;
+        .ct-slice-donut{
+            stroke-width: 14px !important;
+        }
+    }
+}
+
+/* Activity */
+.activity-feed {
+    padding: 15px 15px 0 15px;
+    list-style: none;
+  
+    .feed-item {
+      position: relative;
+      padding-bottom: 29px;
+      padding-left: 30px;
+      border-left: 2px solid $gray-200;
+  
+      &:last-child {
+        border-color: transparent;
+      }
+  
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -4px;
+        left: -9px;
+        width: 16px;
+        height: 16px;
+        border-radius: 30px;
+        background: $success;
+    }
+
+  
+      .date {
+        display: block;
+        position: relative;
+        top: -5px;
+        color: #8c96a3;
+        text-transform: uppercase;
+        font-size: 13px;
+      }
+      .activity-text {
+        position: relative;
+        top: -3px;
+      }
+    }
+}
+
+/************* Chat **********/
+
+.conversation-list {
+    list-style: none;
+    padding: 0px 10px;
+    max-height: 350px;
+    li {
+        margin-bottom: 24px;
+    }
+    .chat-avatar {
+        width: 40px;
+        display: inline-block;
+        text-align: center;
+        float: left;
+        img {
+            width: 100%;
+            border-radius: 100%;
+        }
+        .time {
+            font-size: 12px;
+            font-style: normal;
+        }
+    }
+    .ctext-wrap {
+        .user-name {
+            display: block;
+            font-weight: bold;
+            position: relative;
+            font-size: 12px;
+            color: darken($primary, 14%);
+        }
+        p{
+            color: darken($primary, 18%);
+        }
+    }
+    .conversation-text {
+        display: inline-block;
+        font-size: 12px;
+        float: left;
+        margin-left: 12px;
+        width: 70%;
+    }
+    .ctext-wrap {
+        padding: 10px 18px;
+        background: lighten($primary, 32%);
+        border-radius: 0px 7px 7px 7px;
+        position: relative;
+        display: inline-block;
+        &:after {
+            content: " ";
+            position: absolute;
+            right: 100%;
+            top: 0;
+            border: solid transparent;
+            border-right-color: lighten($primary, 32%);
+            border-top-color: lighten($primary, 32%);
+            border-width: 5px;
+          }
+        p {
+            margin: 0px;
+            padding-top: 3px;
+        }
+    }
+    .odd {
+        .chat-avatar {
+            float: right !important;
+        }
+        .conversation-text {
+            width: 70% !important;
+            margin-right: 12px;
+            text-align: right;
+            float: right !important;
+        }
+        .ctext-wrap {
+            background: lighten($gray-200, 2%) !important;
+            border-radius: 7px 0px 7px 7px;
+            p{
+                color: $gray-600;
+            }
+            &:after {
+                left: 100% !important;
+                top: 0 !important;
+                border-color: rgba(238,238,242,0)!important;
+                border-left-color: lighten($gray-200, 2%) !important;
+                border-top-color: lighten($gray-200, 2%)!important;
+            }
+        }
+    }
+}
+
+.chat-input{
+    height: 2.25rem;
+}

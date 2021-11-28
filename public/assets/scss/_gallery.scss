@@ -1,0 +1,63 @@
+/* =============
+   Gallery
+============= */
+
+.overlay-container{
+  position: relative;
+}
+.project-item {
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  img.gallery-thumb-img{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.project-item-overlay {
+  background: none repeat scroll 0 0 $dark;
+  position: absolute;
+  transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  visibility: hidden;
+  overflow: hidden;
+  transform: translateX(-100%);
+
+  h4 {
+    font-size: 18px;
+    font-weight: 500;
+    white-space: nowrap;
+    color: $white;
+    position: absolute;
+    top: 7%;
+    left: 7%;
+    margin: 0;
+    text-overflow: ellipsis;
+  }
+
+  p{
+    font-size: 15px;
+    font-weight: 500;
+    white-space: nowrap;
+    color: $white;
+    position: absolute;
+    overflow: hidden;
+    bottom: 7%;
+    left: 7%;
+    text-overflow: ellipsis;
+    margin: 0;
+  }
+}
+
+.overlay-container:hover .project-item-overlay {
+  transform: translateX(0%);
+  visibility: visible;
+}

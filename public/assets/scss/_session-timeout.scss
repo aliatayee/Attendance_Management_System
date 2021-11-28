@@ -1,0 +1,19 @@
+/* ==============
+  Session Timeout
+===================*/
+#session-timeout-dialog {
+  .modal-title {
+    margin-top: 0;
+  }
+  .close {
+    display: none;
+  }
+  .btn-default {
+    background-color: $white;
+    color: $danger;
+  }
+  .countdown-holder {
+    color: $danger;
+    font-weight: 500;
+  }
+}

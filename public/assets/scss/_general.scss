@@ -1,0 +1,89 @@
+/* ==============
+  General
+===================*/
+
+body {
+  background-repeat: repeat;
+  background: $bg-body;
+  font-family: $font-family;
+  color: #5b626b;
+  font-size: $base-font;
+}
+
+html {
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 10px 0;
+  font-family: $font-family-secondary;
+  font-weight: 600;
+}
+
+p{
+  line-height: 1.7;
+}
+
+svg {
+  max-width: 100%;
+}
+
+a {
+  color: $gray-600;
+
+  &:hover {
+    outline: 0;
+    text-decoration: none;
+  }
+  &:active {
+    outline: 0;
+    text-decoration: none;
+  }
+  &:focus {
+    outline: 0;
+    text-decoration: none;
+  }
+}
+
+b, strong {
+  font-weight: 500;
+}
+
+.container-alt {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#wrapper {
+  height: $height;
+  overflow: hidden;
+  width: $width;
+}
+
+// Slimscroll
+.slimScrollDiv {
+  height: auto !important;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+  background-color: $primary;
+}
+
+/* Social */
+.social-links {
+  li {
+    a {
+      border-radius: 50%;
+      display: inline-block;
+      height: 30px;
+      line-height: 30px;
+      width: 30px;
+      text-align: center;
+    }
+  }
+}
+

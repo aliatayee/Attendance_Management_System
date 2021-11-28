@@ -1,0 +1,23 @@
+/* ==============
+  Card
+===================*/
+
+.card {
+  border: none;
+  box-shadow: $shadow;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 576px) {
+  .card-columns {
+      -webkit-column-gap: 30px;
+      -moz-column-gap: 30px;
+      column-gap: 30px;
+  }
+}
+
+.card-columns {
+  .card {
+    margin-bottom: 30px;
+  }
+}

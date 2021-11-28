@@ -1,0 +1,80 @@
+/* ==============
+  Account Pages
+===================*/
+
+.home-btn {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  z-index: 9;
+}
+
+.wrapper-page {
+  margin: 5.5% auto;
+  max-width: 492px;
+  position: relative;
+
+  .logo-admin {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -40px;
+    margin: 0px auto;
+    width: 74px;
+    height: 74px;
+    line-height: 74px;
+    background: $white;
+    border-radius: 50%;
+    border-bottom: 2px solid $success;
+  }
+}
+
+.account-card{
+  .account-card-content{
+    padding: 40px;
+  }
+}
+
+
+.user-thumb {
+  position: relative;
+  z-index: 999;
+  img {
+    height: 88px;
+    margin: 0 auto;
+    width: 88px;
+  }
+}
+
+.ex-page-content {
+  h1 {
+    font-size: 98px;
+    font-weight: 500;
+    line-height: 150px;
+  }
+}
+
+.accountbg {
+  background: url("../images/bg.jpg");
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+
+.account-page-full {
+  left: 0;
+  position: absolute;
+  height: 100%;
+  margin: 0;
+  width: 420px;
+  background-color: $white;
+  .logo{
+    line-height: 70px;
+  }
+  .card {
+    box-shadow: none;
+  }
+}

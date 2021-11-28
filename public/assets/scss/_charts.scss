@@ -1,0 +1,244 @@
+/* ==============
+  Charts
+===================*/
+
+.chart {
+  position: relative;
+  display: inline-block;
+  width: 110px;
+  height: 110px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.chart.chart-widget-pie {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.percent {
+  display: inline-block;
+  line-height: 110px;
+  z-index: 2;
+
+  &:after {
+    content: '%';
+    margin-left: 0.1em;
+    font-size: .8em;
+  }
+}
+
+
+/* Morris chart */
+.morris-charts {
+  text {
+    font-family: $font-family-secondary !important;
+  }
+}
+.morris-chart-height {
+  height: 300px;
+}
+.morris-hover.morris-default-style {
+  border-radius: 5px;
+  padding: 10px 12px;
+  background: $white;
+  border: none;
+  box-shadow: 0 5px 25px 5px rgba(0, 0, 0, 0.14);
+
+  .morris-hover-point {
+    font-weight: 500;
+    font-size: $base-font;
+    color: $dark !important;
+    font-family: $font-family;
+  }
+  .morris-hover-row-label {
+    background-color: $dark;
+    color: $white;
+    padding: 4px;
+    border-radius: 5px 5px 0 0;
+    margin: -10px -12px 10px;
+    font-family: $font-family;
+  }
+}
+
+/* Flot chart */
+.flot-chart-height {
+  height: 320px;
+}
+
+#flotTip {
+  padding: 8px 12px;
+  background-color: $white;
+  z-index: 100;
+  color: $dark;
+  box-shadow: 0 5px 25px 5px rgba(0, 0, 0, 0.14);
+  border-radius: 1px;
+}
+
+/* Chartist chart */
+.ct-golden-section:before {
+  float: none;
+}
+.ct-chart {
+  height: 300px;
+}
+.ct-grid {
+  stroke: rgba(0, 0, 0, 0.09);
+  stroke-width: 2px;
+  stroke-dasharray: 3px;
+}
+.ct-chart .ct-label {
+  fill: $muted;
+  color: $muted;
+  font-size: 14px;
+  line-height: 1;
+}
+.ct-chart.simple-pie-chart-chartist .ct-label {
+  color: $white;
+  fill: $white;
+  font-size: 16px;
+}
+.ct-chart .ct-series.ct-series-a .ct-bar,
+.ct-chart .ct-series.ct-series-a .ct-line,
+.ct-chart .ct-series.ct-series-a .ct-point,
+.ct-chart .ct-series.ct-series-a .ct-slice-donut {
+  stroke: $primary;
+}
+.ct-chart .ct-series.ct-series-b .ct-bar,
+.ct-chart .ct-series.ct-series-b .ct-line,
+.ct-chart .ct-series.ct-series-b .ct-point,
+.ct-chart .ct-series.ct-series-b .ct-slice-donut {
+  stroke: $success;
+}
+.ct-chart .ct-series.ct-series-c .ct-bar,
+.ct-chart .ct-series.ct-series-c .ct-line,
+.ct-chart .ct-series.ct-series-c .ct-point,
+.ct-chart .ct-series.ct-series-c .ct-slice-donut {
+  stroke: $warning;
+}
+.ct-chart .ct-series.ct-series-d .ct-bar,
+.ct-chart .ct-series.ct-series-d .ct-line,
+.ct-chart .ct-series.ct-series-d .ct-point,
+.ct-chart .ct-series.ct-series-d .ct-slice-donut {
+  stroke: $dark;
+}
+.ct-chart .ct-series.ct-series-e .ct-bar,
+.ct-chart .ct-series.ct-series-e .ct-line,
+.ct-chart .ct-series.ct-series-e .ct-point,
+.ct-chart .ct-series.ct-series-e .ct-slice-donut {
+  stroke: $info;
+}
+.ct-chart .ct-series.ct-series-f .ct-bar,
+.ct-chart .ct-series.ct-series-f .ct-line,
+.ct-chart .ct-series.ct-series-f .ct-point,
+.ct-chart .ct-series.ct-series-f .ct-slice-donut {
+  stroke: $danger;
+}
+.ct-chart .ct-series.ct-series-g .ct-bar,
+.ct-chart .ct-series.ct-series-g .ct-line,
+.ct-chart .ct-series.ct-series-g .ct-point,
+.ct-chart .ct-series.ct-series-g .ct-slice-donut {
+  stroke: $gray-100;
+}
+.ct-series-a .ct-area,
+.ct-series-a .ct-slice-pie {
+  fill: $primary;
+}
+.ct-series-b .ct-area,
+.ct-series-b .ct-slice-pie {
+  fill: $warning;
+}
+.ct-series-c .ct-area,
+.ct-series-c .ct-slice-pie {
+  fill: $dark;
+}
+
+.chartist-tooltip {
+  position: absolute;
+  display: inline-block;
+  opacity: 0;
+  min-width: 10px;
+  padding: 2px 10px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  background-clip: padding-box;
+  background: $dark;
+  color: $white;
+  text-align: center;
+  pointer-events: none;
+  z-index: 1;
+  -webkit-transition: opacity .2s linear;
+  -moz-transition: opacity .2s linear;
+  -o-transition: opacity .2s linear;
+  transition: opacity .2s linear;
+}
+.chartist-tooltip.tooltip-show {
+  opacity: 1;
+}
+
+/* C3 chart */
+.c3 svg {
+  max-width: 100%;
+}
+.c3-tooltip td>span {
+  background: $dark;
+}
+.c3-tooltip td {
+  border-left: none;
+}
+.c3-tooltip {
+  box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.12);
+  opacity: 1;
+}
+.c3-chart-arcs-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+.c3-tooltip tr {
+  border: none !important;
+}
+.c3-tooltip th {
+  background-color: $dark;
+}
+
+.c3-tooltip {
+  .value {
+    font-weight: 600;
+  }
+}
+
+.c3-line {
+  stroke-width: 2px;
+}
+
+.c3-legend-item {
+  font-size: 13px;
+}
+
+/**** E chart *****/ 
+
+.e-chart{
+  height: 350px;
+}
+
+/* Sparkline chart */
+.jqstooltip {
+  box-sizing: content-box;
+  background-color: $dark !important;
+  padding: 5px 10px !important;
+  border-radius: 3px;
+  border-color: $dark !important;
+  box-shadow: $shadow;
+}
+.jqsfield {
+  font-size: 12px !important;
+  line-height: 18px !important;
+  color: $white !important;
+}

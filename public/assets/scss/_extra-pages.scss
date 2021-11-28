@@ -1,0 +1,145 @@
+
+/* ==============
+  Extra pages
+===================*/
+
+
+/************** Pricing **************/
+
+.pricing-box{
+    .pricing-icon{
+        i{
+            font-size: 30px;
+            padding: 14px;
+        }
+    }
+    .pricing-features{
+        padding: 0px 12px;
+    }
+}
+
+
+/***************** Faqs *******************/
+
+.faq{
+    position: relative;
+    .card-header{
+        border:none;
+        background: transparent;
+        padding: 22px 20px;
+    }
+} 
+
+.accordion{
+    .card{
+        border-bottom: 1px solid $gray-200 !important;
+        border-radius: 4px !important;
+        box-shadow: none;
+    }
+}
+
+a.faq[data-toggle=collapse].collapsed:before {
+    content: '\F419';
+}
+
+a.faq[data-toggle=collapse]:before {
+    content: '\F377';
+    display: block;
+    font-family: 'Material Design Icons';
+    font-size: 20px;
+    color: $muted;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/**************** maintenance *******************/
+
+.maintenance-img{
+    img{
+        max-width: 320px;
+    }
+}
+
+.maintenance-box{
+    i{
+        font-size: 28px;
+    }
+}
+
+/**************** coming soon *******************/
+
+.coming-watch{
+    div {
+        display: inline-block;
+        .card{
+            margin: 0px 15px 15px 15px;
+            .countdown-num
+            {
+                font-weight: 500;
+                color: $primary;
+            }
+        }
+        span {
+            width: 150px;
+            display: block;
+            &:first-child {
+                height: 60px;
+                font-weight: 300;
+                font-size: 3em;
+                line-height: 48px;
+            }
+            &:last-child {
+                padding-top: 14px;
+                font-size: 0.9em;
+            }
+        }        
+    }
+}
+
+/*------------ Subscriber --------------*/
+
+.coming-soon-search-form {
+    input {
+        padding: 15px 20px;
+        width: 100%;
+        color: $gray-800;
+        border: 2px solid $gray-200;
+        outline: none !important;
+        padding-right: 180px;
+        padding-left: 30px;
+        border-radius: 30px;
+    }
+    button {
+        position: absolute;
+        top: 7px;
+        right: 8px;
+        outline: none !important;
+        border-radius: 30px;
+        padding: 9px 30px;
+    }
+    form {
+        position: relative;
+        max-width: 600px;
+        margin: 0px auto;
+    }
+}
+
+/**************** pages 404/500 *******************/
+
+.content-center {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.content-desc-center {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.ex-pages{
+    position: relative;
+    height: 100vh;
+}

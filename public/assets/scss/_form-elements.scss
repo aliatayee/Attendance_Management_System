@@ -1,0 +1,57 @@
+/* ==============
+  Form-elements
+===================*/
+
+label {
+  font-weight: 500;
+}
+
+.form-control {
+  font-size: $base-font;
+  &:focus {
+    border-color: $primary;
+    box-shadow: none;
+  }
+}
+
+.form-control-sm {
+  font-size: .875rem;
+}
+
+.custom-select-sm {
+  font-size: 75%;
+}
+
+.custom-control-input:checked~.custom-control-indicator {
+  background-color: $primary;
+}
+
+.custom-control-input:focus~.custom-control-indicator {
+  -webkit-box-shadow: 0 0 0 1px $white, 0 0 0 3px $primary;
+  box-shadow: 0 0 0 1px $white, 0 0 0 3px $primary;
+}
+
+.has-success {
+  .form-control {
+    border-color: $success;
+    box-shadow: none;
+  }
+}
+
+.has-warning {
+  .form-control {
+    border-color: $warning;
+    box-shadow: none;
+  }
+}
+
+.has-error {
+  .form-control {
+    border-color: $danger;
+    box-shadow: none;
+  }
+}
+
+.input-group-text{
+  font-size: 14px;
+}

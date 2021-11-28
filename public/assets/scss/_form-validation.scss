@@ -1,0 +1,25 @@
+/* ==============
+  Form-Validation
+===================*/
+
+.error {
+  color: #ff0000;
+}
+
+.parsley-error {
+  border-color: $danger;
+}
+.parsley-errors-list {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+.parsley-errors-list.filled {
+  display: block;
+}
+.parsley-errors-list > li {
+  font-size: 12px;
+  list-style: none;
+  color: $danger;
+  margin-top: 5px;
+}

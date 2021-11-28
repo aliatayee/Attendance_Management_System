@@ -1,0 +1,26 @@
+/* ==============
+  Range slider
+===================*/
+
+/* Ion Range slider */
+
+.irs--modern{
+  .irs-bar, .irs-to, .irs-from, .irs-single {
+    background: $primary !important;
+  }
+  .irs-to, .irs-from, .irs-single{
+    &:before{
+      border-top-color: $primary;
+    }
+  }
+  .irs-grid-text{
+    font-size: 11px;
+  }
+  .irs-min, .irs-max{
+    color: $gray-600;
+  }
+  .irs-handle > i:nth-child(1){
+    width: 8px;
+    height: 8px;
+  }
+}

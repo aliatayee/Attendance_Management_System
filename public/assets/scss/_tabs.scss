@@ -1,0 +1,61 @@
+/* =============
+   Tabs & Accordions
+============= */
+
+.nav-tabs,.nav-pills {
+  .nav-link {
+    color: $dark;
+    font-weight: 500;
+  }
+}
+
+.nav-tabs-custom {
+  border-bottom: 2px solid #DDD;
+
+  .nav-item {
+    position: relative;
+
+    .nav-link {
+      border: none !important;
+      font-weight: 500;
+    }
+  }
+}
+
+.nav-tabs-custom > li > a {
+  color: $dark;
+}
+
+.nav-tabs-custom > li > a::after {
+  content: "";
+  background: $primary;
+  height: 2px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -1px;
+  transition: all 250ms ease 0s;
+  transform: scale(0);
+}
+
+.nav-tabs-custom > li > a.active::after, .nav-tabs-custom > li:hover > a::after {
+  transform: scale(1);
+}
+
+.nav-tabs-custom > li > a.active {
+  color: $primary !important;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+  background: $primary;
+}
+
+#accordion {
+  .card{
+    box-shadow: none !important;
+    border: 1px solid $gray-200;
+    .card-header{
+      border-bottom: 1px solid $gray-200;
+    }
+  }
+}

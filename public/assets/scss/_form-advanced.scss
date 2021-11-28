@@ -1,0 +1,292 @@
+/* ==============
+  Form-Advanced
+===================*/
+/* Datepicker */
+.datepicker {
+  border: 1px solid $gray-100;
+  padding: 8px;
+}
+
+.datepicker table tr td.active, .datepicker table tr td.active:hover, .datepicker table tr td.active.disabled,
+.datepicker table tr td.active.disabled:hover,.datepicker table tr td.today, .datepicker table tr td.today.disabled,
+.datepicker table tr td.today.disabled:hover, .datepicker table tr td.today:hover,.datepicker table tr td.selected,
+.datepicker table tr td.selected.disabled, .datepicker table tr td.selected.disabled:hover,
+.datepicker table tr td.selected:hover  {
+  background-color: $primary !important;
+  background-image: none;
+  box-shadow: none;
+  color: $white;
+}
+
+.table-condensed>thead>tr>th, .table-condensed>tbody>tr>td {
+  padding: 5px;
+}
+
+/* Bootstrap-touchSpin */
+.bootstrap-touchspin .input-group-btn-vertical .btn {
+  padding: 9px 12px;
+}
+.bootstrap-touchspin .input-group-btn-vertical i {
+  top: 4px;
+  left: 8px;
+}
+
+/* Color Picker */
+.colorpicker-visible {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  margin-top: 0;
+}
+
+.datepicker-dropdown.dropdown-menu {
+  visibility: visible;
+  opacity: 1;
+  margin-top: 0;
+}
+
+.colorpicker-selectors i {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.colorpicker-element{
+  .btn-light{
+    background: $gray-200;
+    border: 1px solid #ced4da;
+  }
+}
+
+// Colorpicker 2X
+.colorpicker-2x .colorpicker-saturation {
+  width: 200px;
+  height: 200px;
+}
+
+.colorpicker-2x .colorpicker-hue,
+.colorpicker-2x .colorpicker-alpha {
+  width: 30px;
+  height: 200px;
+}
+
+.colorpicker-2x .colorpicker-color,
+.colorpicker-2x .colorpicker-color div {
+  height: 30px;
+}
+
+/* Select 2 */
+.select2-container {
+  width: 100% !important;
+
+  .select2-selection--single {
+    border: 1px solid #E3E3E3;
+    height: 38px;
+    &:focus{
+      outline: none;
+    }
+
+    .select2-selection__rendered {
+      line-height: 36px;
+      padding-left: 12px;
+    }
+
+    .select2-selection__arrow {
+      height: 34px;
+      width: 34px;
+      right: 3px;
+
+      b{
+        border-color: #999 transparent transparent transparent;
+        border-width: 6px 6px 0 6px;
+      }
+    }
+  }
+}
+
+.select2-container--open {
+  .select2-selection--single {
+
+    .select2-selection__arrow {
+
+      b{
+        border-color: transparent transparent #999 transparent;
+        border-width: 0 6px 6px 6px !important;
+      }
+    }
+  }
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: $primary;
+}
+.select2-results__option {
+  padding: 6px 12px;
+}
+
+.select2-dropdown {
+  border: 1px solid #e3e3e3;
+  padding-top: 5px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, .15);
+}
+.select2-search {
+  input{
+    border: 1px solid #e3e3e3;
+  }
+}
+
+.select2-container .select2-selection--multiple {
+  min-height: 38px;
+  border: 1px solid #e3e3e3;
+
+  .select2-selection__rendered {
+    padding: 2px 10px;
+  }
+  .select2-search__field {
+    margin-top: 7px;
+    border: 0;
+  }
+  .select2-selection__choice {
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: 1px;
+    padding: 0 7px;
+  }
+}
+
+.select2-container--default{
+  &.select2-container--focus {
+    .select2-selection--multiple{
+      border-color: $gray-400;
+    }
+  }
+}
+
+
+/* CSS Switch */
+input[switch] {
+  display: none;
+}
+input[switch] + label {
+  font-size: 1em;
+  line-height: 1;
+  width: 56px;
+  height: 24px;
+  background-color: $gray-300;
+  background-image: none;
+  border-radius: 2rem;
+  padding: 0.16667rem;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  font-weight: 500;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+input[switch] + label:before {
+  color: $dark;
+  content: attr(data-off-label);
+  display: block;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 21px;
+  position: absolute;
+  right: 1px;
+  margin: 3px;
+  top: -2px;
+  text-align: center;
+  min-width: 1.66667rem;
+  overflow: hidden;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+input[switch] + label:after {
+  content: '';
+  position: absolute;
+  left: 3px;
+  background-color: $gray-200;
+  box-shadow: none;
+  border-radius: 2rem;
+  height: 20px;
+  width: 20px;
+  top: 2px;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+input[switch]:checked + label {
+  background-color: $primary;
+}
+input[switch]:checked + label:before {
+  color: $white;
+  content: attr(data-on-label);
+  right: auto;
+  left: 3px;
+}
+input[switch]:checked + label:after {
+  left: 33px;
+  background-color: $gray-200;
+}
+
+input[switch="bool"] + label {
+  background-color: $danger;
+}
+input[switch="bool"] + label:before,input[switch="bool"]:checked + label:before,
+input[switch="default"]:checked + label:before{
+  color: $white;
+}
+
+input[switch="bool"]:checked + label {
+  background-color: $success;
+}
+
+input[switch="default"]:checked + label {
+  background-color: #a2a2a2;
+}
+
+input[switch="primary"]:checked + label {
+  background-color: $primary;
+}
+
+input[switch="success"]:checked + label {
+  background-color: $success;
+}
+
+input[switch="info"]:checked + label {
+  background-color: $info;
+}
+
+input[switch="warning"]:checked + label {
+  background-color: $warning;
+}
+
+input[switch="danger"]:checked + label {
+  background-color: $danger;
+}
+
+input[switch="dark"]:checked + label {
+  background-color: $dark;
+}
+
+
+/* Bootstrap filestyle */
+.icon-span-filestyle {
+  padding-right: 5px;
+}
+.bootstrap-filestyle {
+  label {
+    margin-bottom: 0;
+  }
+}
+.group-span-filestyle {
+  .badge {
+    background-color: $dark;
+  }
+}
+
+
+/* Prism editor */
+:not(pre) > code[class*="language-"], pre[class*="language-"] {
+    background: $gray-100;
+}
+

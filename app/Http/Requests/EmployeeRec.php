@@ -1,0 +1,34 @@
+<?php
+
+namespace App\Http\Requests;
+
+use Illuminate\Foundation\Http\FormRequest;
+
+class EmployeeRec extends FormRequest
+{
+    /**
+     * Determine if the user is authorized to make this request.
+     *
+     * @return bool
+     */
+    public function authorize()
+    {
+        return true;
+    }
+
+    /**
+     * Get the validation rules that apply to the request.
+     *
+     * @return array
+     */
+    public function rules()
+    {
+        return [
+            'name' => 'required|string|min:3|max:64|alpha_dash',
+            'position' => 'required|string|min:3|max:64|alpha_dash',
+            'email' => 'required|string|email|max:255|unique:users',
+            'pin_code' => 'required|numeric|min:4',
+            'schedule' => 'required|exists:schedules,slug',
+        ];
+    }
+}

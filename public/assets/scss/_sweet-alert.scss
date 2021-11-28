@@ -1,0 +1,42 @@
+/* =========== */
+/* Sweet Alert */
+/* =========== */
+
+.swal2-container {
+  font-family: inherit;
+  .swal2-title {
+    font-size: 24px;
+  }
+  
+}
+
+.swal2-icon{
+  &.swal2-question{
+    border-color: $primary !important;
+    color: $primary !important;
+  }
+}
+
+.swal2-popup{
+  .swal2-content {
+    font-size: 16px !important;
+  }
+  .swal2-styled{
+    &:focus{
+      box-shadow: none !important;
+    }
+  }
+}
+
+
+.swal2-icon{
+  &.swal2-success {
+    .swal2-success-ring {
+      border-color: $success !important;
+    }
+
+    [class^=swal2-success-line]{
+      background: $success !important;
+    }
+  }
+}

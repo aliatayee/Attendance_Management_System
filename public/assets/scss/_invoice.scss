@@ -1,0 +1,37 @@
+/* ==== =====
+Invoice
+============= */
+
+.table > thead > tr > .no-line {
+  border-bottom: none;
+}
+
+.table > tbody > tr > .no-line {
+  border-top: none;
+}
+.table > tbody > tr > .thick-line {
+  border-top: 2px solid $gray-100;
+}
+
+/* ==============
+  Print css
+===================*/
+@media print {
+  .topbar, .left, .page-title-box, .footer {
+    display: none;
+  }
+  .wrapper {
+    padding: 0;
+  }
+  .content {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .content-page {
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .container-fluid {
+    width: 100%;
+  }
+}

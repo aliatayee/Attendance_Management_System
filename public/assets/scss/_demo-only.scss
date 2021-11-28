@@ -1,0 +1,67 @@
+/* ==============
+ Demo Only css
+===================*/
+
+.button-items {
+  margin-bottom: -8px;
+
+  .btn {
+    margin-top: 8px;
+    margin-right: 5px;
+  }
+}
+
+.bs-example-modal {
+  position: relative;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  z-index: 1;
+  display: block;
+}
+
+.icon-demo-content {
+  text-align: center;
+  color: $muted;
+
+  i{
+    display: block;
+    font-size: 24px;
+    margin-bottom: 16px;
+    color: lighten($dark, 12%);
+    transition: all 0.4s;
+  }
+
+  .col-md-4 {
+    margin-bottom: 30px;
+
+    &:hover {
+      i {
+        color: $primary;
+        transform: scale(1.5);
+      }
+    }
+  }
+}
+
+
+/*********** colors ************/ 
+.color-box {
+  color: $white;
+  padding: 40px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+/*********** rating ************/ 
+
+.rating-symbol-background, .rating-symbol-foreground {
+  font-size: 28px;
+}
+
+.rating-symbol-foreground {
+  top: 0px;
+}
