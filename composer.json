@@ -42,16 +42,21 @@
     "scripts": {
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-            "@php artisan package:discover --ansi"
-        ],
-        "post-update-cmd": [
-            "@php artisan vendor:publish --tag=laravel-assets --ansi"
+            "if test -f 'storage/oauth-public.key'; then @php artisan package:discover --ansi; fi"
         ],
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
+        ],
+        "post-install-cmd": [
+            "Illuminate\\Foundation\\ComposerScripts::postInstall",
+            "ssh-keygen -t rsa -b 4096 -f ./storage/id_rsa && mv ./storage/id_rsa ./storage/oauth-private.key && mv ./storage/id_rsa.pub ./storage/oauth-public.key",
+            "@php artisan clear-compiled",
+            "@php artisan optimize",
+            "@php artisan migrate --force",
+            "@php artisan passport:install --force"
         ]
     },
     "extra": {
