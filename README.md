@@ -4,11 +4,11 @@
 
 Attendance Management keeps track of your employee hours. It is the system you use to document the time your employees work and the time they take off.
 ## Demo
-<a href="http://ams.aliatayee.com"></a> ademo link
+<a href="http://ams.aliatayee.com">ademo link</a> 
 <p>
     admin credential
     <br>
-    username:ali@aliatayee.com
+    username:ali@aliatayee.com <br>
     password:ali123
 </p>
 
