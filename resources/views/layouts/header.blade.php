@@ -3,7 +3,7 @@
 
 <!-- LOGO -->
 <div class="topbar-left">
-    <a href="index.html" class="logo">
+    <a href="/" class="logo">
         <span>
                 <h1 style="color: white; ">AMS</h1>
             </span>

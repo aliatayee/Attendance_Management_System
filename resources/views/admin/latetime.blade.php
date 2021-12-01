@@ -34,7 +34,8 @@
 
                 <div class="table-rep-plugin">
                     <div class="table-responsive mb-0" data-pattern="priority-columns">
-                        <table id="tech-companies-1" class="table table-striped">
+                        <table id="datatable-buttons" class="table table-striped table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                        
                             <thead>
                                 <tr>
                                     <th data-priority="1">Date</th>

@@ -1,0 +1,52 @@
+#canvas {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	z-index: 1;
+}
+#time-container {
+	width: 555px;
+	height: 555px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 0;
+}
+.numbers-container {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+#time-container span {
+	color: #FFFFFF;
+	position: absolute;
+	z-index: 2;
+}
+.clock-number {
+	font-family: 'Josefin Sans', sans-serif;/*100 300 400 600*/
+	font-weight: 300;
+	font-size: 350%;
+}
+.clock-label {
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 300;
+}
+#ticker {
+	font-size: 100%;
+	left: 255px;
+	top: 155px;
+}
+#timelable {
+	font-size: 85%;
+	left: 245px;
+	top: 335px;
+}
+#timeleft {
+	font-size: 190%;
+	left: 180px;
+	top: 355px;
+}
+

@@ -1,0 +1,180 @@
+@font-face {
+	font-family: 'fontawesome';
+	src: url('../fonts/fontawesome/fontawesome58ac.html?-ulzwqn');
+	src: url('../fonts/fontawesome/fontawesomed41d.html?#iefix-ulzwqn') format('embedded-opentype'), url('../fonts/fontawesome/fontawesome58ac-2.html?-ulzwqn') format('woff'), url('../fonts/fontawesome/fontawesome58ac-3.html?-ulzwqn') format('truetype'), url('../fonts/fontawesome/fontawesome58ac-4.html?-ulzwqn#fontawesome') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}/* Made with http://icomoon.io/app */
+
+.container {
+	overflow: hidden;
+}
+
+/* This is the style for the dummy image slider. Animations are in fx[type].css */
+
+.component {
+	margin: 0 auto;
+	position: relative;
+	margin-bottom: 40px;
+	max-width: 100%;
+}
+
+.component-small {
+	width: 650px;
+	height: 290px;
+}
+
+.component-fullwidth {
+	width: 100%;
+	height: 600px;
+	margin-bottom: 0;
+}
+
+.component-transparent {
+	width: 900px;
+	height: 500px;
+}
+
+.component > ul {
+	width: 100%;
+	max-width: 880px;
+	height: 100%;
+	position: relative;
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+}
+
+.component-small > ul {
+	width: 450px;
+}
+
+.component-fullwidth > ul {
+	overflow: hidden;
+}
+
+.component li {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	opacity: 0;
+	z-index: 999;
+}
+
+.component-fullwidth li {
+	overflow: hidden;
+}
+
+.component .current {
+	opacity: 1;
+	pointer-events: auto;
+	z-index: 1000;
+}
+
+.component li img {
+	display: block;
+	max-width: 100%;
+}
+
+.component-fullwidth li img {
+	min-width: 100%;
+	max-width: none;
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.component nav a {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	color: #5b4c5c;
+	outline: none;
+	overflow: hidden;
+	text-align: center;
+	line-height: 200px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.component-small nav a.prev, .component-transparent nav a.prev {
+	left: 0px;
+}
+
+.component-small nav a.next, .component-transparent nav a.next {
+	right: 0px;
+}
+
+.component-fullwidth nav a {
+	top: 100%;
+	margin-top: 25px;
+	left: 50%;
+	-webkit-transform: translateY(0%);
+	transform: translateY(0%);
+}
+
+.component-fullwidth nav a.prev {
+	margin-left: -80px;
+}
+
+.component-fullwidth nav a.next {
+	margin-left: 20px;
+}
+
+.component nav a::before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	line-height: 60px;
+	height: 100%;
+	font-family: 'fontawesome';
+	font-size: 60px;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	opacity: 0.5;
+	background-color: #fff;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.component nav a:hover::before {
+	opacity: 1;
+}
+
+a.prev::before {
+	content: "\e601";
+}
+
+a.next::before {
+	content: "\e600";
+}
+
+@media screen and (max-width: 35.5em) {
+	.component-small nav a {
+		top: 100%;
+		margin-top: 10px;
+		-webkit-transform: translateY(0%);
+		transform: translateY(0%);
+	}
+
+	.component-small nav a.prev {
+		left: 50%;
+		margin-left: -80px;
+	}
+
+	.component-small nav a.next {
+		margin-left: 20px;
+		right: auto;
+		left: 50%;
+	}
+}

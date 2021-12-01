@@ -1,8 +1,6 @@
 @extends('layouts.master')
 
 @section('css')
-<!-- Table css -->
-<link href="{{ URL::asset('plugins/RWD-Table-Patterns/dist/css/rwd-table.min.css') }}" rel="stylesheet" type="text/css" media="screen">
 @endsection
 
 @section('breadcrumb')
@@ -30,10 +28,8 @@
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-body">
- 
-                                        <div class="table-rep-plugin">
-                                            <div class="table-responsive mb-0" data-pattern="priority-columns">
-                                                <table id="tech-companies-1" class="table table-striped">
+                                                <table id="datatable-buttons" class="table table-striped table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                        
                                                     <thead>
                                                     <tr>
                                                         <th data-priority="1">Employee ID</th>
@@ -75,7 +71,8 @@
                                     </div>
                                 </div>
                             </div> <!-- end col -->
-                        </div> <!-- end row -->            
+                        </div> <!-- end row -->    
+                                    
 
 @foreach( $employees as $employee)
 @include('includes.edit_delete_employee')
@@ -88,15 +85,5 @@
 
 @section('script')
 <!-- Responsive-table-->
-<script src="{{ URL::asset('plugins/RWD-Table-Patterns/dist/js/rwd-table.min.js') }}"></script>
-@endsection
 
-@section('script')
-<script>
-$(function() {
-      $('.table-responsive').responsiveTable({
-          addDisplayAllBtn: 'btn btn-secondary'
-       });
-});
-</script>
 @endsection
