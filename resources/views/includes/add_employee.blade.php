@@ -26,18 +26,12 @@
                                 required />
                         </div>
 
+                        
                         <div class="form-group">
-                            <label for="pincode" class="col-sm-3 control-label">PinCode (4 Digits)</label>
+                            <label for="email" class="col-sm-3 control-label">Email</label>
 
 
-                            <input type="password" maxlength="4" class="form-control" id="pincode" name="pin_code">
-
-                        </div>
-                        <div class="form-group">
-                            <label for="email" class="col-sm-3 control-label">E-Mail</label>
-
-
-                            <input type="email" class="form-control" id="email" name="email" required>
+                            <input type="email" class="form-control" id="email" name="email">
 
                         </div>
                         <div class="form-group">

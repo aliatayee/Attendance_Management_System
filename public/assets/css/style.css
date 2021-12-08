@@ -3856,5 +3856,7 @@ Invoice
     overflow: inherit !important;
   }
 }
-
+.modal-content {
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */

@@ -8,6 +8,8 @@ class Attendance extends Model
 
 {
 
+    protected $table = 'attendances';
+    
     
     public function employee()
     {

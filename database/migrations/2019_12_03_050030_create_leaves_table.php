@@ -15,15 +15,18 @@ class CreateLeavesTable extends Migration
     {
         Schema::create('leaves', function (Blueprint $table) {
             $table->Increments('id');
+            $table->integer('uid')->unsigned()->default(0);
             $table->integer('emp_id')->unsigned();
-            $table->time('leave_time')->default(date("H:i"));
-            $table->date('leave_date');
+            $table->boolean('state')->default(0);
+            $table->time('leave_time')->default(date("H:i:s"));
+            $table->date('leave_date')->default(date("Y-m-d"));
             $table->boolean('status')->default(1);
-
+            $table->boolean('type')->unsigned()->default(1);
+            $table->timestamps();
 
             $table->foreign('emp_id')->references('id')->on('employees')->onDelete('cascade');
 
-            $table->timestamps();
+           
         });
     }
 

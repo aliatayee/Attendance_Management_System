@@ -14,12 +14,7 @@ use Illuminate\Http\Request;
 
 class ApiController extends Controller
 {
-    /**
-     * assign checks for attendance and leave for the employee.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+    
     public function check(AttendanceEmp $request)
     {
         $request->validated();

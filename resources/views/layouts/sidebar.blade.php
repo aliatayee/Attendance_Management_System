@@ -38,8 +38,14 @@
                                 </a>
                             </li>
                             <li class="">
+                                <a href="/sheet-report" class="waves-effect {{ request()->is("sheet-report") || request()->is("sheet-report/*") ? "mm active" : "" }}">
+                                    <i class="dripicons-to-do"></i> <span> Sheet Report </span>
+                                </a>
+                            </li>
+
+                            <li class="">
                                 <a href="/attendance" class="waves-effect {{ request()->is("attendance") || request()->is("attendance/*") ? "mm active" : "" }}">
-                                    <i class="ti-calendar"></i> <span> Attendance </span>
+                                    <i class="ti-calendar"></i> <span> Attendance Logs </span>
                                 </a>
                             </li>
                             <li class="">
@@ -55,6 +61,12 @@
                             <li class="">
                                 <a href="/overtime" class="waves-effect {{ request()->is("overtime") || request()->is("overtime/*") ? "mm active" : "" }}">
                                     <i class="dripicons-alarm"></i> <span> Over Time </span>
+                                </a>
+                            </li>
+                            <li class="menu-title">Tools</li>
+                            <li class="">
+                                <a href="{{ route("finger_device.index") }}" class="waves-effect {{ request()->is("finger_device") || request()->is("finger_device/*") ? "mm active" : "" }}">
+                                    <i class="fas fa-fingerprint"></i> <span> Biometric Device </span>
                                 </a>
                             </li>
 
