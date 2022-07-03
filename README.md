@@ -37,6 +37,12 @@ $ cd Attendance_Management_System
 
 - Then open ```env``` file and update database credentials.
 
+- Then run the below command to install composer dependencies
+
+```
+$ composer install
+```
+
 - Then run the below command to install dependencies
 
 ```
@@ -47,6 +53,12 @@ $ npm i
 ```
 $ php artisan migrate 
 ```
+- Then run the below command to run seeder.
+
+```
+$ php artisan db:seed 
+```
+
 - Finally, run the below command to start the project.
 
 ```
