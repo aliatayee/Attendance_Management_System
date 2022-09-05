@@ -13,7 +13,7 @@ Attendance Management System is a web application based on Laravel which keeps t
 - LARAVEL
 
 ## Demo
-<a href="http://ams.aliatayee.com">Demo link</a> 
+<a href="http://ams.alihost.co">Demo link</a> 
 
   ### Admin credential
     username:ali@aliatayee.com
