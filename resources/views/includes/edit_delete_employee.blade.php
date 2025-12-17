@@ -1,5 +1,5 @@
 <!-- Edit -->
-<div class="modal fade" id="edit{{ $employee->name }}">
+<div class="modal fade" id="edit{{ $employee->id }}">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -9,7 +9,7 @@
             </div>
             <h4 class="modal-title"><b><span class="employee_id">Edit Employee</span></b></h4>
             <div class="modal-body text-left">
-                <form class="form-horizontal" method="POST" action="{{ route('employees.update', $employee->name) }}">
+                <form class="form-horizontal" method="POST" action="{{ route('employees.update', $employee->id) }}">
                     @csrf
                     <input type="hidden" name="_method" value="PUT">
                     <div class="form-group">
@@ -28,8 +28,8 @@
                             required>
 
                     </div>
-                 
-                  
+
+
                     <div class="form-group">
                         <label for="email" class="col-sm-3 control-label">Email</label>
 
@@ -66,16 +66,16 @@
 </div>
 
 <!-- Delete -->
-<div class="modal fade" id="delete{{ $employee->name }}">
+<div class="modal fade" id="delete{{ $employee->id }}">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header " style="align-items: center">
-               
+
               <h4 class="modal-title "><span class="employee_id">Delete Employee</span></h4>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">
-                <form class="form-horizontal" method="POST" action="{{ route('employees.destroy', $employee->name) }}">
+                <form class="form-horizontal" method="POST" action="{{ route('employees.destroy', $employee->id) }}">
                     @csrf
                     {{ method_field('DELETE') }}
                     <div class="text-center">
